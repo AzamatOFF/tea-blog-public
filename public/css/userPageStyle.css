@@ -1,0 +1,177 @@
+#userCommentsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.userOneCommentContainer {
+  width: 30vw;
+  border: 2px solid rgb(102, 98, 53);
+  border-radius: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.oneCommentText {
+  white-space: pre-line;
+  text-align: center;
+  font-size: 18px;
+  word-break: break-all;
+}
+
+.commentAuthor {
+  text-align: center;
+  font-size: 14px;
+}
+
+.userCommentFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postUrl {
+  color: rgb(102, 98, 53);
+  text-decoration: none;
+}
+
+.postUrl:hover {
+  text-decoration: underline;
+}
+
+.postUrl:active {
+  color: rgb(173, 170, 170);
+}
+
+#adminContentContainer {
+  font-family: "IBM Plex Mono", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70vh;
+}
+
+#adminSecondContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#allTeaContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 50px;
+}
+
+#allTeaContainer ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+#allTeaContainer ul li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 5px;
+}
+
+.adminForm input,
+.adminForm textarea {
+  background-color: rgb(239, 230, 214);
+  border: 1px solid rgb(169, 140, 106);
+  height: 30px;
+  width: 350px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+#detailsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+#teaInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 10px;
+}
+
+#oneTeaInsideContainer {
+  display: flex;
+}
+
+#oneTeaDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#oneTeaDescriptionContainer span {
+  width: 70%;
+  text-align:left;
+}
+
+#oneTeaInsideContainer img {
+  height: 300px;
+  width: 300px;
+}
+
+#allCommentsContainer {
+  width: 50%;
+
+}
+
+.oneComment {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(102, 98, 53);
+  border-radius: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.addCommentForm input, .addCommentForm textarea{
+    background-color: rgb(239, 230, 214);
+    border: 1px solid rgb(169, 140, 106);
+    height: 30px;
+    width: 350px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.descriptionSpan {
+  overflow-y: auto;
+  max-height: 200px
+}
+
+#onlyCommentsContainer {
+  overflow-y: auto;
+  max-height: 350px
+}
+
+.descriptionSpan::-webkit-scrollbar, #onlyCommentsContainer::-webkit-scrollbar  {
+  width: 12px;               /* ширина всей полосы прокрутки */
+}
+
+.descriptionSpan::-webkit-scrollbar-track, #onlyCommentsContainer::-webkit-scrollbar-track  {
+  background: rgb(169,140,106) ;        /* цвет зоны отслеживания */
+}
+
+.descriptionSpan::-webkit-scrollbar-thumb, #onlyCommentsContainer::-webkit-scrollbar-thumb  {
+  background-color: rgb(102,98,53);    /* цвет бегунка */
+  border-radius: 20px;       /* округлось бегунка */
+  border: 3px solid rgb(169,140,106) ;  /* отступ вокруг бегунка */
+}

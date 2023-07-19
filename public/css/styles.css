@@ -1,0 +1,420 @@
+body {
+  margin: 0;
+  background-color: rgb(239, 230, 214);
+  height: 100%;
+}
+
+.super_navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vh;
+  background-color: rgb(169, 140, 106);
+}
+
+.logo {
+  height: 60px;
+  margin-left: 150px;
+}
+
+.navContent {
+  margin-right: 30px;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navContent a {
+  text-decoration: none;
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 0.15em;
+}
+
+.navContent a:active {
+  font-weight: 800;
+  color: rgb(239, 230, 214);
+}
+
+.navContent a:hover {
+  font-weight: 800;
+  color: rgb(239, 230, 214);
+}
+
+.navContent a:visited {
+  color: rgb(239, 230, 214);
+  color: white;
+}
+
+.homeH1 {
+  color: rgb(102, 98, 53);
+  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 0.15em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.regPage,
+.logPage {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: ;
+}
+
+.regPage h1,
+.logPage h1 {
+  margin: 50px;
+  text-align: center;
+  color: rgb(102, 98, 53);
+  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 0.15em;
+}
+
+.formSignup,
+.formSignin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formSignup input,
+.formSignin input {
+  background-color: rgb(239, 230, 214);
+  border: 1px solid rgb(169, 140, 106);
+  height: 35px;
+  width: 350px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  padding: 0 15px 0 15px;
+  font-family: monospace;
+  letter-spacing: 0.15em;
+  color: rgb(102, 98, 53);
+  transition: 0.5s;
+}
+
+.formSignup input:focus,
+.formSignin input:focus {
+  box-shadow: 3px 3px rgb(169, 140, 106), -1em 0 0.4em rgb(102, 98, 53);
+  outline: none;
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.formSignup input:hover,
+.formSignin input:hover {
+  box-shadow: 3px 3px rgb(169, 140, 106), -1em 0 0.4em rgb(102, 98, 53);
+}
+
+.btnSign {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  border: 1px solid rgb(169, 140, 106);
+  padding: 10px 30px;
+  margin: 10px 20px;
+  border-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgb(169, 140, 106) 0%,
+    rgb(239, 230, 214) 51%,
+    rgb(102, 98, 53) 100%
+  );
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+.btnSign:hover {
+  background-position: right center;
+}
+
+.btnSign:active {
+  transform: scale(0.9);
+}
+
+.teaInfo {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  color: rgb(102, 98, 53);
+}
+
+.userBtnDelete,
+.adminBtnDelete {
+  border-radius: 20px;
+  align-items: center;
+  background-color: rgb(239, 230, 214);
+  border: 1px solid rgb(102, 98, 53);
+  color: rgb(102, 98, 53);
+  font-family: "Montserrat", sans-serif;
+  transition: 0.5s;
+}
+
+.userBtnDelete:hover,
+.adminBtnDelete:hover {
+  background-color: rgb(169, 140, 106);
+  color: rgb(239, 230, 214);
+}
+
+.oneCommentText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  color: rgb(102, 98, 53);
+  letter-spacing: 2px;
+}
+
+#oneTeaDescriptionContainer {
+  font-family: monospace;
+  color: rgb(102, 98, 53);
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+
+.oneComment {
+  font-size: 14px;
+}
+
+.placeSpan {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+#newCommentInput {
+  margin-top: 10px;
+  width: 300px;
+  height: 80px;
+  padding: 10px 20px 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.15em;
+  color: rgb(102, 98, 53);
+  border: 2px solid rgb(102, 98, 53);
+  border-radius: 10px;
+  /*overflow-wrap: break-word;*/
+  /*word-break: break-all;*/
+}
+
+#teaInfoContainer h3 {
+  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 0.15em;
+  color: rgb(102, 98, 53);
+  font-size: 25px;
+}
+
+#addCommentButton,
+.adminPageButtons {
+  margin-bottom: 50px;
+  color: white;
+  border: 1px solid rgb(102, 98, 53);
+  padding: 10px 30px;
+  border-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgb(169, 140, 106) 0%,
+    rgb(239, 230, 214) 51%,
+    rgb(102, 98, 53) 100%
+  );
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+#addCommentButton:hover,
+.adminPageButtons:hover {
+  background-position: right center;
+}
+
+.oneCommentSpan {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(102, 98, 53);
+  letter-spacing: 3px;
+  font-size: 17px;
+  word-break: break-all;
+}
+
+#addCommentForm {
+  margin: 15px;
+}
+
+/* styles for baloon */
+[class*="balloon__content"] {
+  background: rgb(102, 98, 53);
+  padding: 0;
+}
+
+ymaps.ymaps-2-1-79-balloon__layout{
+  background: rgb(239, 230, 214);
+
+}
+
+ymaps.ymaps-2-1-79-balloon__content{
+  background: rgb(239, 230, 214);
+  padding: 0 0 0 5px;
+margin-right: 5px;
+}
+
+ymaps.ymaps-2-1-79-balloon__tail::after {
+  background: rgb(239, 230, 214);
+}
+
+ymaps.ymaps-2-1-79-balloon__close+ymaps.ymaps-2-1-79-balloon__content {
+  margin-right: 5px;
+}
+
+.descriptionMap {
+  display: block;
+  color: rgb(169, 140, 106);
+  font-size: 10px;
+  line-height: 17px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.aBal,
+.aBal:visited {
+  color: rgb(102, 98, 53);
+  font-weight: bold;
+  text-decoration: none !important;
+  font-family: "Montserrat", monospace;
+}
+
+.balloon p{
+  font-family: "Montserrat", sans-serif;
+  color: rgb(102, 98, 53);
+}
+
+.balloon b {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(102, 98, 53);
+}
+
+#map {
+  min-width: 600px;
+  min-height: 800px;
+  padding: 0;
+  margin: 0;
+}
+
+.oneCommentInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+#userCommentsHeader {
+  margin-top: 50px;
+  text-align: center;
+  color: rgb(102, 98, 53);
+  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 0.15em;
+}
+
+#teaAddresslInput, #teaDescriptionlInput, #teaPhotoInput, #newAdminInput, #imgNameInput {
+  padding: 2px 10px 2px 10px;
+  color: rgb(102, 98, 53);
+  font-family: "Montserrat", sans-serif;
+}
+
+#teaNamelInput {
+  padding: 2px 10px 2px 10px;
+  color: rgb(102, 98, 53);
+  font-family: "Montserrat", sans-serif;
+}
+
+input[type="file"]{display:none}
+.uploadPhoto {
+  border: 1px solid rgb(169, 140, 106);
+  padding: 2px 10px 2px 10px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.liDitailsA {
+  text-decoration: none;
+  color: rgb(102, 98, 53);
+}
+
+.liDitailsA:visited {
+  color: rgb(102, 98, 53);
+}
+
+#adminContentContainer h3 {
+  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 0.15em;
+  color: rgb(102, 98, 53);
+  font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+  .logo {
+    height: 50px;
+    margin-left: 30px;
+  }
+  .navContent a {
+    font-size: 12px;
+    letter-spacing: 0em;
+  }
+  .formSignup input,
+  .formSignin input {
+    height: 35px;
+    width: 250px;
+  }
+  .userOneCommentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .userCommentFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #newCommentInput,
+  .oneComment {
+    width: 200px;
+  }
+
+  #oneTeaInsideContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .placeSpan {
+    margin-top: 30px;
+  }
+  #allCommentsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #adminContentContainer {
+    margin-top: 150px;
+    flex-direction: column-reverse;
+  }
+  #adminContentContainer input {
+    width: 250px;
+  }
+  #teaDescriptionlInput {
+    width: 250px;
+  }
+  .divNewAdmin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #adminContentContainer h3 {
+    font-size: 17px;
+  }
+}
+
+#imgNameInput {
+  display: none;
+}
